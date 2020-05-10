@@ -1,6 +1,6 @@
 HELP.md
 target/
-!.mvn/**
+.mvn/**
 !**/src/main/**
 !**/src/test/**
 
@@ -31,4 +31,4 @@ build/
 .vscode/
 
 ### local properties
-.resources/application-local.properties
+.src/main/resources/application-local.properties
