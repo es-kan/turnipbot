@@ -22,7 +22,7 @@ public class JdaConfig {
     private List<EventListener> messageListeners;
 
     @Bean
-    public ShardManager defaultShardManagerBuilder() throws LoginException {
+    public ShardManager shardManager() throws LoginException {
         return new DefaultShardManagerBuilder()
                 .setToken(token)
                 .addEventListeners(messageListeners.toArray())
