@@ -52,7 +52,7 @@ public class TurnipLogMessageListener extends ListenerAdapter {
     }
 
     private String getLow(Message msg) {
-        Optional<TurnipLog> log = turnipLogRepository.findFirstByOrderByTurnipValueDesc();
+        Optional<TurnipLog> log = turnipLogRepository.findFirstByOrderByTurnipValueAsc();
         if (log.isPresent()) {
             TurnipLog turnipLog = log.get();
             User user = msg.getJDA().getUserById(turnipLog.getUserId());
